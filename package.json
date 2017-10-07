@@ -1,0 +1,35 @@
+{
+  "name": "flayr-website",
+  "version": "0.0.1",
+  "description": "Flayr website",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "webpack-dev-server --content-base public/ --inline --hot --history-api-fallback --port 8000 --host 0.0.0.0",
+    "start-server": "node .",
+    "start": "npm run clean && npm run build && npm run start-server",
+    "build": "webpack --colors --progress",
+    "clean": "rm -rf public/build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

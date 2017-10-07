@@ -1,0 +1,28 @@
+.home-page
+{
+  .hero-section
+  {
+    position: relative;
+
+    .background-image
+    {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      filter: brightness(50%);
+    }
+
+    .hero-body
+    {
+      text-align: center;
+      top: 30%;
+      width: 100%;
+
+      .hero-caption
+      {
+        color: white;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+    }
+  }
+}
